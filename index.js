@@ -10,7 +10,7 @@ const pTruthyRace = (evaluator, promises) => {
 
   return new Promise((resolve, reject) => {
     promises.map(p => {
-      p.then(result => {
+      return p.then(result => {
         if (evaluator(result)) {
           resolve(result);
         }
