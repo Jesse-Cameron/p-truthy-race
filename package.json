@@ -1,0 +1,53 @@
+{
+  "name": "p-truthy-race",
+  "version": "1.0.0",
+  "description": "lil utility to help race promises against an evaluator function",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest && xo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jesse-Cameron/p-truthy-race.git"
+  },
+  "keywords": [
+    "promise",
+    "race",
+    "truthy",
+    "utility"
+  ],
+  "author": "",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Jesse-Cameron/p-truthy-race/issues"
+  },
+  "homepage": "https://github.com/Jesse-Cameron/p-truthy-race#readme",
+  "devDependencies": {
+    "jest": "^23.6.0",
+    "xo": "^0.23.0"
+  },
+  "xo": {
+    "globals": [
+      "describe",
+      "it",
+      "expect",
+      "beforeEach"
+    ],
+    "space": true,
+    "rules": {
+      "new-cap": [
+        "error",
+        {
+          "capIsNewExceptions": [
+            "Class"
+          ]
+        }
+      ],
+      "capitalized-comments": 0,
+      "object-curly-spacing": [
+        "error",
+        "always"
+      ]
+    }
+  }
+}
