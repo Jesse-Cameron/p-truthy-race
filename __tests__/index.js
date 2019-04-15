@@ -50,7 +50,7 @@ describe('p-truthy-race ', () => {
 
   it('should resolve with custom alternative if no promises evaluate true', done => {
     const promises = [p1];
-    pTruthyRace(_ => false, promises, 42).then(result => {
+    pTruthyRace(() => false, promises, 42).then(result => {
       expect(result).toBe(42);
       done();
     });
@@ -58,7 +58,7 @@ describe('p-truthy-race ', () => {
 
   it('should resolve with custom alternative if no promises evaluate true', done => {
     const promises = [p1];
-    pTruthyRace(_ => false, promises, true).then(result => {
+    pTruthyRace(() => false, promises, true).then(result => {
       expect(result).toBe(true);
       done();
     });

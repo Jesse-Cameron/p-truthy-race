@@ -14,7 +14,8 @@ The goal is to race a collection of promises against one another and return the 
     - accepts a single param
     - returns a boolean
 - *promises* (Promise[], required) - array of promises
-- *returns* - the first result that resolves true against the `evaluator`, false otherwise
+- *alternative* (any, optional) - If all promises resolve but none matches the evaluator function, return this value as the final result. Defaults to `false`.
+- *returns* - the first result that resolves true against the `evaluator`, otherwise the alternative value
 
 
 ## Example Implementation
