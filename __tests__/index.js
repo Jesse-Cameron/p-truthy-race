@@ -23,6 +23,7 @@ describe('p-truthy-race ', () => {
       if (result === 'bar') {
         return true;
       }
+
       return false;
     };
 
@@ -38,6 +39,7 @@ describe('p-truthy-race ', () => {
       if (result === 'bar') {
         return true;
       }
+
       return false;
     };
 
@@ -69,8 +71,10 @@ describe('p-truthy-race ', () => {
       if (result === 'bar') {
         return true;
       }
+
       return false;
     };
+
     const p4 = new Promise((resolve, reject) => {
       setTimeout(reject, 25, 'baz');
     });
