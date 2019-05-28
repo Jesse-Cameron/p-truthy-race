@@ -15,6 +15,7 @@ const pTruthyRace = (evaluator, promises, alternative = false) => {
         if (evaluator(result)) {
           resolve(result);
         }
+
         pending -= 1;
         if (pending === 0) {
           resolve(alternative);
