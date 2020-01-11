@@ -28,6 +28,7 @@ describe('p-truthy-race ', () => {
     };
 
     const promises = [p1, p2, p3];
+    // eslint-disable-next-line promise/prefer-await-to-then
     pTruthyRace(evalFunc, promises).then(result => {
       expect(result).toEqual('bar');
       done();
@@ -44,6 +45,7 @@ describe('p-truthy-race ', () => {
     };
 
     const promises = [p1, p3];
+    // eslint-disable-next-line promise/prefer-await-to-then
     pTruthyRace(evalFunc, promises).then(result => {
       expect(result).toBeFalsy();
       done();
@@ -52,6 +54,7 @@ describe('p-truthy-race ', () => {
 
   it('should resolve with custom alternative if no promises evaluate true', done => {
     const promises = [p1];
+    // eslint-disable-next-line promise/prefer-await-to-then
     pTruthyRace(() => false, promises, 42).then(result => {
       expect(result).toBe(42);
       done();
@@ -60,6 +63,7 @@ describe('p-truthy-race ', () => {
 
   it('should resolve with custom alternative if no promises evaluate true', done => {
     const promises = [p1];
+    // eslint-disable-next-line promise/prefer-await-to-then
     pTruthyRace(() => false, promises, true).then(result => {
       expect(result).toBe(true);
       done();

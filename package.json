@@ -1,8 +1,11 @@
 {
   "name": "p-truthy-race",
-  "version": "1.1.2",
+  "version": "2.0.0",
   "description": "lil utility to help race promises against an evaluator function",
   "main": "index.js",
+  "engines": {
+    "node": ">=8"
+  },
   "scripts": {
     "test": "jest && npm run lint",
     "lint": "xo"

@@ -11,6 +11,7 @@ const pTruthyRace = (evaluator, promises, alternative = false) => {
 
   return new Promise((resolve, reject) => {
     promises.map(p => {
+      // eslint-disable-next-line promise/prefer-await-to-then
       return p.then(result => {
         if (evaluator(result)) {
           resolve(result);
