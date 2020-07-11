@@ -1,6 +1,6 @@
 {
   "name": "p-truthy-race",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "lil utility to help race promises against an evaluator function",
   "main": "index.js",
   "engines": {
@@ -27,8 +27,8 @@
   },
   "homepage": "https://github.com/Jesse-Cameron/p-truthy-race#readme",
   "devDependencies": {
-    "jest": "^25.2.7",
-    "xo": "^0.25.4"
+    "jest": "^26.1.0",
+    "xo": "^0.32.1"
   },
   "xo": {
     "globals": [
