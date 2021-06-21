@@ -28,7 +28,7 @@
   "homepage": "https://github.com/Jesse-Cameron/p-truthy-race#readme",
   "devDependencies": {
     "jest": "^26.1.0",
-    "xo": "^0.36.1"
+    "xo": "^0.40.3"
   },
   "xo": {
     "globals": [
